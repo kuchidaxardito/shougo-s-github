@@ -255,6 +255,10 @@ alias hexdump='hexdump -C'
 alias termite='termite --exec=zsh'
 alias lock='i3exit lock'
 
+alias tidy-xml='tidy -i -xml'
+alias ctags='/usr/local/bin/ctags'
+
+alias python='/usr/local/bin/python3'
 
 #####################################################################
 # keybinds
