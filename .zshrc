@@ -324,3 +324,10 @@ zmodload zsh/mathfunc
 # C-\ is detach
 # dtach command, dtach -A command, dtach -a session
 # adbuco -c session,abduco -c session command, abduco -a command
+
+activator_version="1.3.12"
+activator_installed_dir="$HOME/opt/typesafe-activator/activator-dist-${activator_version}/bin"
+
+if [ -d $activator_installed_dir ]; then
+    PATH="$activator_installed_dir:$PATH"
+fi
