@@ -9,6 +9,10 @@ export SHELL=zsh
 export GOPATH="$HOME/.go"
 export PATH="$HOME/bin:/usr/local/bin:$GOPATH/bin:$PATH"
 
+if [ -d $HOME/my/bin ]; then
+    export PATH="$HOME/my/bin:$PATH"
+fi
+
 #---- SVN -----------------#
 export SVN_EDITOR="vim"
 
