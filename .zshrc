@@ -258,7 +258,12 @@ alias lock='i3exit lock'
 alias tidy-xml='tidy -i -xml'
 alias ctags='/usr/local/bin/ctags'
 
-alias python='/usr/local/bin/python3'
+# alias python='/usr/local/bin/python3'
+
+# gnu commands
+alias find='gfind'
+alias xargs='gxargs'
+alias sed='gsed'
 
 #####################################################################
 # keybinds
@@ -331,3 +336,11 @@ activator_installed_dir="$HOME/opt/typesafe-activator/activator-dist-${activator
 if [ -d $activator_installed_dir ]; then
     PATH="$activator_installed_dir:$PATH"
 fi
+
+#####################################################################
+# pyenv
+######################################################################
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
